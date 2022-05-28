@@ -19,5 +19,8 @@ class Shape {
 
 }
 
-module.exports = user;
+module.exports = {
+	Shape
+}
+
 // export class using module.exports
