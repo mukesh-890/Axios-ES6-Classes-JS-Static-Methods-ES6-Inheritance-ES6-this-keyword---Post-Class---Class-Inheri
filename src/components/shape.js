@@ -1,26 +1,20 @@
-
-// declare class
-class Shape {
-    drawShape(radius, color){
-    this.radius = radius;
-    this.color = color;
-    }
-    calculateArea() {
-        return `
-      Radius: ${this.radius}
-    `;
-	}
-    color(){
-        return `
-      Color: ${this.color}
-    `;
+class Shape{
+    constructor(name){
+       this.name;
 
     }
 
-}
+    drawShape(){
+        return`${this.name} is drawn`;
+    }
 
-module.exports = {
-	Shape
+    calculateArea(length,width){
+        return 2*(length*width);
+        
+    }
+    color(color){
+        return `${color} is Applied on ${this.name}`;
+    }
+    
 }
-
-// export class using module.exports
+module.exports = Shape;
